@@ -140,4 +140,14 @@ let updateLabel = function(id) {
     labelElement.innerText= waterLevel[id].toFixed(2)+ " ltrs";
 }
 
-setInterval(redistributeWater, 5000);
+setInterval(redistributeWater, 3000);
+
+let mouseDownIntervals = [];
+
+let onMouseDown = function(id) {
+    mouseDownIntervals.push(setInterval(()=>{console.log("Mouse is down"); fillWater(id)}, 1000));
+}
+
+let onMouseUp = function() {
+    mouseDownIntervals.map((int)=>{console.log("Mouse is up or out"); clearInterval(int)});
+}
