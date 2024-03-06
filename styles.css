@@ -1,0 +1,44 @@
+.greyBackground {
+    background-color: grey;
+}
+
+.box {
+    size: 100% !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 300px;
+}
+
+.tank {
+    border: 5px solid white;
+    margin: 10px;
+    height: 150px;
+    width: 100px;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+}
+
+.addButton {
+    background-color: #04AA6D;
+    margin-left: 45px; 
+    margin-top: 5px;
+}
+
+.removeButton {
+    background-color: #f44336;
+    margin-left: 32px;
+    margin-top: 5px;
+}
+.water {
+    background-color: #74ccf4;
+}
+
+.label {
+    color: white;
+    margin-left: 50px; 
+    margin-top: 5px;
+}
